@@ -11,6 +11,8 @@ The string to be searched is the output of running `VBoxManage showvminfo <machi
 This is on a single-core VM running Jessie w LXDE desktop and 8GB of RAM.  The CPU is an `Intel(R) Core(TM) i5-3570K CPU @ 3.40GHz`.
 
 ```
+Name                            Iterations 
+--------------------------------------------------------------------------------------------------------------
 BenchmarkFindWRegExp              100000             17057 ns/op           44480 B/op         42 allocs/op
 BenchmarkFindWRegExpPrecompiled   500000              2243 ns/op              64 B/op          2 allocs/op
 BenchmarkFindWIndex              2000000               824 ns/op              32 B/op          1 allocs/op
